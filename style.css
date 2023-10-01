@@ -31,6 +31,38 @@ body {
 	width: 50px;
 	border: 2px solid black;
 	padding: 5px;
+	user-select: none;
+}
+
+#password-length {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 10px;
+	cursor: grab;
+	background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+#password-length::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 30px;
+	width: 10px;
+	border-radius: 10px;
+	background: yellow;
+	transform: translateY(-7px);
+	transition: 0.3s ease-in-out;
+	box-shadow: -2px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+#password-length::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 16px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.settings {
+	margin: 10px;
 }
 
 input[type="checkbox"] {
@@ -42,21 +74,16 @@ input[type="checkbox"]:checked + label {
 }
 
 label {
-	display: inline-block;
+	display: inline-flex;
 	height: 40px;
-	width: 40px;
+	width: 70px;
 	background: gray;
 	color: white;
 	border: 2px solid black;
 	cursor: pointer;
-}
-
-#password-length {
-	margin: 10px;
-}
-
-.settings {
-	margin: 10px;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
 }
 
 #generate {
