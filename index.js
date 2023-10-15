@@ -1,7 +1,7 @@
 // TODO: Add a security checker that checks the security of the generated password
-// TODO: Adding the copy password option
 
 const passwordItem = document.getElementById("password");
+const copyButton = document.getElementById("copy-button");
 const passwordLengthItem = document.getElementById("password-length");
 const passwordLengthContainerItem = document.getElementById("password-length-container");
 const lowerCase = document.getElementById("lowercase");
@@ -43,4 +43,15 @@ passwordLengthItem.addEventListener("input", () => {
 
 generatePasswordButton.addEventListener("click", () => {
 	generatePassword();
+});
+
+copyButton.addEventListener("click", () => {
+	let password = passwordItem.textContent;
+
+	if (password === "") {
+		alert("There is nothing to copy!");
+	} else {
+		navigator.clipboard.writeText(password);
+		alert("The password has been copied!");
+	}
 });
