@@ -23,7 +23,7 @@ body {
 	flex-direction: column;
 	border: 2px solid black;
 	border-radius: 10px;
-	height: 30%;
+	height: 40%;
 	width: 40%;
 }
 
@@ -131,4 +131,67 @@ label:hover {
 
 #generate:hover {
 	background: rgba(154, 94, 148, 0.9);
+}
+
+@media screen and (max-width: 959px) {
+	.container {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.container {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 639px) {
+	.container {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 549px) {
+	.container {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container {
+		height: 60%;
+	}
+
+	.settings {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 383px) {
+	.container {
+		height: 70%;
+		width: 70%;
+	}
+
+	.settings {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	#password {
+		width: 180px;
+		height: 50px;
+		padding: 5px;
+	}
 }
