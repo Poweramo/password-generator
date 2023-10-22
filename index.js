@@ -1,5 +1,3 @@
-// TODO: Add a security checker that checks the security of the generated password
-
 const passwordItem = document.getElementById("password");
 const copyButton = document.getElementById("copy-button");
 const passwordLengthItem = document.getElementById("password-length");
