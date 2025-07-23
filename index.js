@@ -10,8 +10,8 @@ const generatePasswordButton = document.getElementById("generate");
 const dataLowerCase = "azertyuiopqsdfghjklmwxcvbn";
 const dataUpperCase = dataLowerCase.toUpperCase();
 const dataNumbers = "0123456789";
-const dataSymbols = `²&é"'(-è_çà)=$*ù^!:;,/.§?%µ£¨+°\`}]@^|[{#~¤`;
 
+const dataSymbols = `²&é"'(-è_çà)=$*ù^!:;,/.§?%µ£¨+°\`}]@^|[{#~¤`;
 const generatePassword = () => {
 	let password = "";
 	let data = [];
